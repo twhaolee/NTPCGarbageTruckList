@@ -17,6 +17,7 @@
 		F2716660205FF1A900CBC4BA /* GarbageTruckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271665F205FF1A900CBC4BA /* GarbageTruckListViewController.swift */; };
 		F2716665206008F400CBC4BA /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716664206008F400CBC4BA /* NSObject+ClassName.swift */; };
 		F27166672060094200CBC4BA /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27166662060094200CBC4BA /* UIViewController+Storyboard.swift */; };
+		F271666E2060128C00CBC4BA /* NTPCOpenDataConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271666D2060128C00CBC4BA /* NTPCOpenDataConnect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F271665F205FF1A900CBC4BA /* GarbageTruckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarbageTruckListViewController.swift; sourceTree = "<group>"; };
 		F2716664206008F400CBC4BA /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		F27166662060094200CBC4BA /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		F271666D2060128C00CBC4BA /* NTPCOpenDataConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTPCOpenDataConnect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				F2716644205FE6BB00CBC4BA /* AppDelegate.swift */,
 				F2716663206008B800CBC4BA /* Extension */,
+				F271666C2060121100CBC4BA /* Network */,
 				F2716656205FE94600CBC4BA /* ViewController */,
 				F2716648205FE6BB00CBC4BA /* Main.storyboard */,
 				F271664B205FE6BB00CBC4BA /* Assets.xcassets */,
@@ -117,6 +120,14 @@
 				F2716664206008F400CBC4BA /* NSObject+ClassName.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		F271666C2060121100CBC4BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F271666D2060128C00CBC4BA /* NTPCOpenDataConnect.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 				F2716660205FF1A900CBC4BA /* GarbageTruckListViewController.swift in Sources */,
 				F271665C205FEC5C00CBC4BA /* CityListViewController.swift in Sources */,
 				F27166672060094200CBC4BA /* UIViewController+Storyboard.swift in Sources */,
+				F271666E2060128C00CBC4BA /* NTPCOpenDataConnect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
