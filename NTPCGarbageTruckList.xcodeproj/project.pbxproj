@@ -157,10 +157,10 @@
 			};
 			buildConfigurationList = F271663C205FE6BB00CBC4BA /* Build configuration list for PBXProject "NTPCGarbageTruckList" */;
 			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
+			developmentRegion = "zh-TW";
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				"zh-TW",
 				Base,
 			);
 			mainGroup = F2716638205FE6BB00CBC4BA;
