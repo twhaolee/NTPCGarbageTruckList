@@ -18,6 +18,7 @@
 		F2716665206008F400CBC4BA /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716664206008F400CBC4BA /* NSObject+ClassName.swift */; };
 		F27166672060094200CBC4BA /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27166662060094200CBC4BA /* UIViewController+Storyboard.swift */; };
 		F271666E2060128C00CBC4BA /* NTPCOpenDataConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271666D2060128C00CBC4BA /* NTPCOpenDataConnect.swift */; };
+		F27166702060153900CBC4BA /* NTPCApiDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271666F2060153900CBC4BA /* NTPCApiDataType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F2716664206008F400CBC4BA /* NSObject+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
 		F27166662060094200CBC4BA /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
 		F271666D2060128C00CBC4BA /* NTPCOpenDataConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTPCOpenDataConnect.swift; sourceTree = "<group>"; };
+		F271666F2060153900CBC4BA /* NTPCApiDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTPCApiDataType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				F271666D2060128C00CBC4BA /* NTPCOpenDataConnect.swift */,
+				F271666F2060153900CBC4BA /* NTPCApiDataType.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27166702060153900CBC4BA /* NTPCApiDataType.swift in Sources */,
 				F2716659205FE99600CBC4BA /* FirstViewController.swift in Sources */,
 				F2716665206008F400CBC4BA /* NSObject+ClassName.swift in Sources */,
 				F2716647205FE6BB00CBC4BA /* ViewController.swift in Sources */,
