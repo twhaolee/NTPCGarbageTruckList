@@ -74,6 +74,7 @@
 				F271663D205FE6BB00CBC4BA /* Sources */,
 				F271663E205FE6BB00CBC4BA /* Frameworks */,
 				F271663F205FE6BB00CBC4BA /* Resources */,
+				F271665D205FEE0800CBC4BA /* Check Swift style and conventions */,
 			);
 			buildRules = (
 			);
@@ -129,6 +130,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F271665D205FEE0800CBC4BA /* Check Swift style and conventions */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Swift style and conventions";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, Run 'brew bundle'.\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F271663D205FE6BB00CBC4BA /* Sources */ = {
