@@ -14,6 +14,7 @@
 		F271664F205FE6BB00CBC4BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F271664D205FE6BB00CBC4BA /* LaunchScreen.storyboard */; };
 		F2716659205FE99600CBC4BA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716658205FE99600CBC4BA /* FirstViewController.swift */; };
 		F271665C205FEC5C00CBC4BA /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271665B205FEC5C00CBC4BA /* CityListViewController.swift */; };
+		F2716660205FF1A900CBC4BA /* GarbageTruckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271665F205FF1A900CBC4BA /* GarbageTruckListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F2716650205FE6BB00CBC4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2716658205FE99600CBC4BA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F271665B205FEC5C00CBC4BA /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
+		F271665F205FF1A900CBC4BA /* GarbageTruckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarbageTruckListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				F2716646205FE6BB00CBC4BA /* ViewController.swift */,
 				F2716657205FE97A00CBC4BA /* First */,
 				F271665A205FEC2000CBC4BA /* CityList */,
+				F271665E205FF17700CBC4BA /* GarbageTruckList */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -92,6 +95,14 @@
 				F271665B205FEC5C00CBC4BA /* CityListViewController.swift */,
 			);
 			path = CityList;
+			sourceTree = "<group>";
+		};
+		F271665E205FF17700CBC4BA /* GarbageTruckList */ = {
+			isa = PBXGroup;
+			children = (
+				F271665F205FF1A900CBC4BA /* GarbageTruckListViewController.swift */,
+			);
+			path = GarbageTruckList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 				F2716659205FE99600CBC4BA /* FirstViewController.swift in Sources */,
 				F2716647205FE6BB00CBC4BA /* ViewController.swift in Sources */,
 				F2716645205FE6BB00CBC4BA /* AppDelegate.swift in Sources */,
+				F2716660205FF1A900CBC4BA /* GarbageTruckListViewController.swift in Sources */,
 				F271665C205FEC5C00CBC4BA /* CityListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
