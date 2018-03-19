@@ -17,7 +17,17 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4w1-D5-j8n">
+                                <rect key="frame" x="125.5" y="318" width="123" height="30"/>
+                                <state key="normal" title="選擇新北市行政區"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4w1-D5-j8n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="USK-zg-UjC"/>
+                            <constraint firstItem="4w1-D5-j8n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wes-0Y-tka"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="fYT-hD-vuY"/>
