@@ -20,4 +20,10 @@ class FirstViewController: ViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func presentCityListAction(_ sender: UIButton) {
+        let viewController = CityListViewController.initFromStoryboard(self.storyboard)
+
+        self.show(viewController, sender: self)
+    }
+
 }
