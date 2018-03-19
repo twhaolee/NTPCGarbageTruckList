@@ -13,6 +13,7 @@
 		F271664C205FE6BB00CBC4BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F271664B205FE6BB00CBC4BA /* Assets.xcassets */; };
 		F271664F205FE6BB00CBC4BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F271664D205FE6BB00CBC4BA /* LaunchScreen.storyboard */; };
 		F2716659205FE99600CBC4BA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716658205FE99600CBC4BA /* FirstViewController.swift */; };
+		F271665C205FEC5C00CBC4BA /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271665B205FEC5C00CBC4BA /* CityListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F271664E205FE6BB00CBC4BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2716650205FE6BB00CBC4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2716658205FE99600CBC4BA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F271665B205FEC5C00CBC4BA /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				F2716646205FE6BB00CBC4BA /* ViewController.swift */,
 				F2716657205FE97A00CBC4BA /* First */,
+				F271665A205FEC2000CBC4BA /* CityList */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -81,6 +84,14 @@
 				F2716658205FE99600CBC4BA /* FirstViewController.swift */,
 			);
 			path = First;
+			sourceTree = "<group>";
+		};
+		F271665A205FEC2000CBC4BA /* CityList */ = {
+			isa = PBXGroup;
+			children = (
+				F271665B205FEC5C00CBC4BA /* CityListViewController.swift */,
+			);
+			path = CityList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 				F2716659205FE99600CBC4BA /* FirstViewController.swift in Sources */,
 				F2716647205FE6BB00CBC4BA /* ViewController.swift in Sources */,
 				F2716645205FE6BB00CBC4BA /* AppDelegate.swift in Sources */,
+				F271665C205FEC5C00CBC4BA /* CityListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

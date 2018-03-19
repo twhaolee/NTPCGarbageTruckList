@@ -26,6 +26,21 @@
             </objects>
             <point key="canvasLocation" x="855" y="133"/>
         </scene>
+        <!--City List View Controller-->
+        <scene sceneID="ivD-sk-f0N">
+            <objects>
+                <viewController storyboardIdentifier="CityListViewController" id="9Gg-dk-tqT" customClass="CityListViewController" customModule="NTPCGarbageTruckList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="irI-AX-K4v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Mef-Kk-w6C"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EY9-Li-Otn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1850" y="133"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="WEW-2V-PUU">
             <objects>
