@@ -19,6 +19,7 @@
 		F27166672060094200CBC4BA /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27166662060094200CBC4BA /* UIViewController+Storyboard.swift */; };
 		F271666E2060128C00CBC4BA /* NTPCOpenDataConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271666D2060128C00CBC4BA /* NTPCOpenDataConnect.swift */; };
 		F27166702060153900CBC4BA /* NTPCApiDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271666F2060153900CBC4BA /* NTPCApiDataType.swift */; };
+		F2716672206017C700CBC4BA /* JsonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716671206017C700CBC4BA /* JsonProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F27166662060094200CBC4BA /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
 		F271666D2060128C00CBC4BA /* NTPCOpenDataConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTPCOpenDataConnect.swift; sourceTree = "<group>"; };
 		F271666F2060153900CBC4BA /* NTPCApiDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTPCApiDataType.swift; sourceTree = "<group>"; };
+		F2716671206017C700CBC4BA /* JsonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		F271666C2060121100CBC4BA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F2716671206017C700CBC4BA /* JsonProtocol.swift */,
 				F271666D2060128C00CBC4BA /* NTPCOpenDataConnect.swift */,
 				F271666F2060153900CBC4BA /* NTPCApiDataType.swift */,
 			);
@@ -231,6 +234,7 @@
 				F271665C205FEC5C00CBC4BA /* CityListViewController.swift in Sources */,
 				F27166672060094200CBC4BA /* UIViewController+Storyboard.swift in Sources */,
 				F271666E2060128C00CBC4BA /* NTPCOpenDataConnect.swift in Sources */,
+				F2716672206017C700CBC4BA /* JsonProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
