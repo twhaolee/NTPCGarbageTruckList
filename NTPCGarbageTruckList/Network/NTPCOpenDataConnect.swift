@@ -24,6 +24,24 @@ class NTPCOpenDataConnect: NSObject {
         self.getDatas(apiPath: apiPath, queryItems: [], completionHandler: completionHandler)
     }
 
+    /// 取得新北市垃圾收取點資訊
+    func getGarbageStationInfoList(startIndex: UInt,
+                                   limit: UInt,
+                                   on city: String,
+                                   completionHandler: @escaping ([GarbageStationModel]?, Error?) -> Void) {
+        var apiPaths = self.apiRootPaths
+        apiPaths.append(NTPCApiDataType.garbageStationInfo.rawValue)
+
+        let apiPath = apiPaths.filter({ !$0.isEmpty }).joined(separator: "/")
+
+        var queryItems: [URLQueryItem] = []
+        queryItems.append(URLQueryItem(name: "$top", value: "\(min(limit, 2000))"))
+        queryItems.append(URLQueryItem(name: "$skip", value: "\(startIndex)"))
+        queryItems.append(URLQueryItem(name: "$filter", value: "city eq \(city)"))
+
+        self.getDatas(apiPath: apiPath, queryItems: queryItems, completionHandler: completionHandler)
+    }
+
     private func getDatas<T: Codable & JsonProtocol>(apiPath: String,
                                                      queryItems: [URLQueryItem],
                                                      completionHandler: @escaping ([T]?, Error?) -> Void) {
