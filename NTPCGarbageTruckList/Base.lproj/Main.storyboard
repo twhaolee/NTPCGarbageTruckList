@@ -73,6 +73,9 @@
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="cityNameLabel" destination="lJj-8L-tqo" id="JDs-Bu-xMX"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

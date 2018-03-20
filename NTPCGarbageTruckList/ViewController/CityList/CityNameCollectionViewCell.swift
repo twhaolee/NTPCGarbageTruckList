@@ -8,5 +8,5 @@
 import UIKit
 
 class CityNameCollectionViewCell: UICollectionViewCell, Reusable {
-
+    @IBOutlet var cityNameLabel: UILabel?
 }
