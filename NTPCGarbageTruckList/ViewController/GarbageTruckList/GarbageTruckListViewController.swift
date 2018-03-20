@@ -11,10 +11,37 @@ class GarbageTruckListViewController: ViewController {
 
     var cityName: String?
 
+    var stations: [GarbageStationModel] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = self.cityName
+
+        self.loadGarbageStationInfoList()
+    }
+
+    func loadGarbageStationInfoList() {
+        guard let cityName = cityName else { return }
+
+        guard !cityName.isEmpty else { return }
+
+        let taskCompletionHandler = { [weak self] (datas: [GarbageStationModel]?, _: Error?) in
+            guard let `self` = self else {
+                return
+            }
+            guard let datas = datas else {
+                assert(false, "Datas is empty")
+                return
+            }
+
+            self.stations = datas
+        }
+
+        NTPCOpenDataConnect.shared.getGarbageStationInfoList(startIndex: UInt(self.stations.count),
+                                                             limit: 200,
+                                                             on: cityName,
+                                                             completionHandler: taskCompletionHandler)
     }
 
     override func didReceiveMemoryWarning() {
