@@ -20,3 +20,16 @@ class CityListViewController: ViewController {
         // Dispose of any resources that can be recreated.
     }
 }
+
+extension CityListViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(for: indexPath) as CityNameCollectionViewCell
+
+        return cell
+    }
+}
