@@ -58,4 +58,10 @@ extension CityListViewController: UICollectionViewDataSource, UICollectionViewDe
 
         return cell
     }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let viewController = GarbageTruckListViewController.initFromStoryboard(self.storyboard)
+
+        self.show(viewController, sender: self)
+    }
 }
