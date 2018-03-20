@@ -13,4 +13,7 @@ enum ConnectionStatus {
 
     /// 連線中
     case connecting
+
+    /// 無更多資料
+    case eof
 }

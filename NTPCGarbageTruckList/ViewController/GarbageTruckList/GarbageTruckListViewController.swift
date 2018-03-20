@@ -33,13 +33,18 @@ class GarbageTruckListViewController: ViewController {
         guard !cityName.isEmpty else { return }
 
         let taskCompletionHandler = { [weak self] (datas: [GarbageStationModel]?, _: Error?) in
-            defer {
-                self?.connectionStatus = .idle
-            }
-
             guard let `self` = self else {
                 return
             }
+
+            defer {
+                if datas?.isEmpty == true {
+                    self.connectionStatus = .eof
+                } else {
+                    self.connectionStatus = .idle
+                }
+            }
+
             guard let datas = datas else {
                 assert(false, "Datas is empty")
                 return
