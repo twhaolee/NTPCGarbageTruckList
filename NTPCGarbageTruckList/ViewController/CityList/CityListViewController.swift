@@ -16,6 +16,8 @@ class CityListViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "City list"
+
         self.loadCityList()
     }
 
