@@ -12,6 +12,7 @@
 		F2706F67206133FB00EA6909 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2706F66206133FB00EA6909 /* Reusable.swift */; };
 		F2706F692061367600EA6909 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2706F682061367600EA6909 /* UICollectionView+Reusable.swift */; };
 		F2706F6B2061386800EA6909 /* CityNameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2706F6A2061386800EA6909 /* CityNameCollectionViewCell.swift */; };
+		F2706F6D206157BD00EA6909 /* GarbageTruckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2706F6C206157BD00EA6909 /* GarbageTruckTableViewCell.swift */; };
 		F2716645205FE6BB00CBC4BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716644205FE6BB00CBC4BA /* AppDelegate.swift */; };
 		F2716647205FE6BB00CBC4BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716646205FE6BB00CBC4BA /* ViewController.swift */; };
 		F271664A205FE6BB00CBC4BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2716648205FE6BB00CBC4BA /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		F2706F66206133FB00EA6909 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		F2706F682061367600EA6909 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		F2706F6A2061386800EA6909 /* CityNameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityNameCollectionViewCell.swift; sourceTree = "<group>"; };
+		F2706F6C206157BD00EA6909 /* GarbageTruckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarbageTruckTableViewCell.swift; sourceTree = "<group>"; };
 		F2716641205FE6BB00CBC4BA /* NTPCGarbageTruckList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTPCGarbageTruckList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2716644205FE6BB00CBC4BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2716646205FE6BB00CBC4BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				F271665F205FF1A900CBC4BA /* GarbageTruckListViewController.swift */,
+				F2706F6C206157BD00EA6909 /* GarbageTruckTableViewCell.swift */,
 			);
 			path = GarbageTruckList;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				F27166672060094200CBC4BA /* UIViewController+Storyboard.swift in Sources */,
 				F271666E2060128C00CBC4BA /* NTPCOpenDataConnect.swift in Sources */,
 				F2716672206017C700CBC4BA /* JsonProtocol.swift in Sources */,
+				F2706F6D206157BD00EA6909 /* GarbageTruckTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
