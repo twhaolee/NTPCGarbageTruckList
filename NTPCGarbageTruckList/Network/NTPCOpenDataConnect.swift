@@ -18,6 +18,9 @@ class NTPCOpenDataConnect: NSObject {
                                                      completionHandler: @escaping ([T]?, Error?) -> Void) {
         var url = self.serverUrl.appendingPathComponent(apiPath)
 
+        var queryItems = queryItems
+        queryItems.append(URLQueryItem(name: "$format", value: "json"))
+
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
         components.queryItems = queryItems
 
