@@ -90,6 +90,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mef-Kk-w6C"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="sfw-SC-xa2" id="VVM-By-mUd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EY9-Li-Otn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

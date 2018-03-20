@@ -9,12 +9,32 @@ import UIKit
 
 class CityListViewController: ViewController {
 
+    @IBOutlet var collectionView: UICollectionView?
+
     var citys: [ZipcodeModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.loadCityList()
+    }
+
+    func loadCityList() {
+        NTPCOpenDataConnect.shared.getZipcodeList { [weak self] (datas, _) in
+            guard let `self` = self else {
+                return
+            }
+            guard let datas = datas else {
+                assert(false, "Datas is empty")
+                return
+            }
+
+            self.citys = datas
+
+            DispatchQueue.main.async {
+                self.collectionView?.reloadData()
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
