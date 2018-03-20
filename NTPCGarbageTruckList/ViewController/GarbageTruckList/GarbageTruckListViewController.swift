@@ -9,6 +9,8 @@ import UIKit
 
 class GarbageTruckListViewController: ViewController {
 
+    @IBOutlet var tableView: UITableView?
+
     var cityName: String?
 
     var stations: [GarbageStationModel] = []
@@ -36,6 +38,10 @@ class GarbageTruckListViewController: ViewController {
             }
 
             self.stations = datas
+
+            DispatchQueue.main.async {
+                self.tableView?.reloadData()
+            }
         }
 
         NTPCOpenDataConnect.shared.getGarbageStationInfoList(startIndex: UInt(self.stations.count),
@@ -57,11 +63,15 @@ extension GarbageTruckListViewController: UITableViewDataSource, UITableViewDele
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.stations.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as GarbageTruckTableViewCell
+
+        let stationInfo = self.stations[indexPath.row]
+        cell.nameLabel?.text = stationInfo.name
+        cell.timeLabel?.text = stationInfo.time
 
         return cell
     }
