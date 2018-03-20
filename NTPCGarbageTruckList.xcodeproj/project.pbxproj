@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F2706F632061296C00EA6909 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2706F622061296C00EA6909 /* CustomError.swift */; };
 		F2706F6520612CFA00EA6909 /* ZipcodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2706F6420612CFA00EA6909 /* ZipcodeModel.swift */; };
+		F2706F67206133FB00EA6909 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2706F66206133FB00EA6909 /* Reusable.swift */; };
 		F2716645205FE6BB00CBC4BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716644205FE6BB00CBC4BA /* AppDelegate.swift */; };
 		F2716647205FE6BB00CBC4BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716646205FE6BB00CBC4BA /* ViewController.swift */; };
 		F271664A205FE6BB00CBC4BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2716648205FE6BB00CBC4BA /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		F2706F622061296C00EA6909 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		F2706F6420612CFA00EA6909 /* ZipcodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipcodeModel.swift; sourceTree = "<group>"; };
+		F2706F66206133FB00EA6909 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		F2716641205FE6BB00CBC4BA /* NTPCGarbageTruckList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTPCGarbageTruckList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2716644205FE6BB00CBC4BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2716646205FE6BB00CBC4BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				F2706F622061296C00EA6909 /* CustomError.swift */,
 				F2716664206008F400CBC4BA /* NSObject+ClassName.swift */,
+				F2706F66206133FB00EA6909 /* Reusable.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				F2716647205FE6BB00CBC4BA /* ViewController.swift in Sources */,
 				F2716645205FE6BB00CBC4BA /* AppDelegate.swift in Sources */,
 				F2716660205FF1A900CBC4BA /* GarbageTruckListViewController.swift in Sources */,
+				F2706F67206133FB00EA6909 /* Reusable.swift in Sources */,
 				F271665C205FEC5C00CBC4BA /* CityListViewController.swift in Sources */,
 				F2706F632061296C00EA6909 /* CustomError.swift in Sources */,
 				F2706F6520612CFA00EA6909 /* ZipcodeModel.swift in Sources */,
