@@ -62,6 +62,8 @@ extension CityListViewController: UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let viewController = GarbageTruckListViewController.initFromStoryboard(self.storyboard)
 
+        viewController.cityName = self.citys[indexPath.row].district
+
         self.show(viewController, sender: self)
     }
 }

@@ -9,10 +9,12 @@ import UIKit
 
 class GarbageTruckListViewController: ViewController {
 
+    var cityName: String?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.title = self.cityName
     }
 
     override func didReceiveMemoryWarning() {
