@@ -14,6 +14,7 @@ class GarbageTruckListViewController: ViewController {
     var cityName: String?
 
     var stations: [GarbageStationModel] = []
+    var connectionStatus = ConnectionStatus.idle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +25,18 @@ class GarbageTruckListViewController: ViewController {
     }
 
     func loadGarbageStationInfoList() {
+        guard self.connectionStatus == .idle else { return }
+        self.connectionStatus = .connecting
+
         guard let cityName = cityName else { return }
 
         guard !cityName.isEmpty else { return }
 
         let taskCompletionHandler = { [weak self] (datas: [GarbageStationModel]?, _: Error?) in
+            defer {
+                self?.connectionStatus = .idle
+            }
+
             guard let `self` = self else {
                 return
             }
