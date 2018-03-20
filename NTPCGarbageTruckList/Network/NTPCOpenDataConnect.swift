@@ -14,6 +14,7 @@ class NTPCOpenDataConnect: NSObject {
     let apiRootPaths: [String] = ["od/data/api"]
 
 
+    /// 取得新北市郵遞區號列表
     func getZipcodeList(completionHandler: @escaping ([ZipcodeModel]?, Error?) -> Void) {
         var apiPaths = self.apiRootPaths
         apiPaths.append(NTPCApiDataType.zipcode.rawValue)
