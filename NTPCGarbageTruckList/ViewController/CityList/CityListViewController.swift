@@ -9,6 +9,8 @@ import UIKit
 
 class CityListViewController: ViewController {
 
+    var citys: [ZipcodeModel] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +25,7 @@ class CityListViewController: ViewController {
 
 extension CityListViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return self.citys.count
     }
 
     func collectionView(_ collectionView: UICollectionView,
