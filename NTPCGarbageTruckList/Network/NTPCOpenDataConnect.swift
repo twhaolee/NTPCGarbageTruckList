@@ -27,7 +27,24 @@ class NTPCOpenDataConnect: NSObject {
         request.httpMethod = "GET"
 
         let taskCompletionHandler = { (data: Data?, response: URLResponse?, error: Error?) in
+            guard let data = data else {
+                completionHandler(nil, error)
+                return
+            }
 
+            guard let httpResponse = response as? HTTPURLResponse else {
+                let error = error ?? CustomError(code: -1, localizedDescription: "The response isn't HTTP response.")
+                completionHandler(nil, error)
+                return
+            }
+
+            guard 200..<300 ~= httpResponse.statusCode else {
+                let error = CustomError(code: httpResponse.statusCode, localizedDescription: "Response is failure")
+                completionHandler(nil, error)
+                return
+            }
+
+            completionHandler(data.decodeToModelArray(), nil)
         }
 
         let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
