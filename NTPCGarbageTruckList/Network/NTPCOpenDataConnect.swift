@@ -13,6 +13,16 @@ class NTPCOpenDataConnect: NSObject {
     let serverUrl: URL = URL(string: "http://data.ntpc.gov.tw")!
     let apiRootPaths: [String] = ["od/data/api"]
 
+
+    func getZipcodeList(completionHandler: @escaping ([ZipcodeModel]?, Error?) -> Void) {
+        var apiPaths = self.apiRootPaths
+        apiPaths.append(NTPCApiDataType.zipcode.rawValue)
+
+        let apiPath = apiPaths.filter({ !$0.isEmpty }).joined(separator: "/")
+
+        self.getDatas(apiPath: apiPath, queryItems: [], completionHandler: completionHandler)
+    }
+
     private func getDatas<T: Codable & JsonProtocol>(apiPath: String,
                                                      queryItems: [URLQueryItem],
                                                      completionHandler: @escaping ([T]?, Error?) -> Void) {
