@@ -121,7 +121,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2e-M4-qJn">
-                                                    <rect key="frame" x="15" y="0.0" width="50" height="43.5"/>
+                                                    <rect key="frame" x="20" y="15" width="50" height="13.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="fIo-VM-CPb"/>
                                                     </constraints>
@@ -130,20 +130,20 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83G-cp-qH1">
-                                                    <rect key="frame" x="85" y="0.0" width="275" height="43.5"/>
+                                                    <rect key="frame" x="90" y="15" width="270" height="13.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Z2e-M4-qJn" firstAttribute="leading" secondItem="4N2-Zw-6Sc" secondAttribute="leading" constant="15" id="6t3-5A-Bwc"/>
-                                                <constraint firstAttribute="bottom" secondItem="83G-cp-qH1" secondAttribute="bottom" id="9Ep-k2-BIR"/>
+                                                <constraint firstItem="83G-cp-qH1" firstAttribute="centerY" secondItem="4N2-Zw-6Sc" secondAttribute="centerY" id="4Nh-Xu-Srf"/>
+                                                <constraint firstItem="Z2e-M4-qJn" firstAttribute="leading" secondItem="4N2-Zw-6Sc" secondAttribute="leading" constant="20" id="6t3-5A-Bwc"/>
+                                                <constraint firstItem="Z2e-M4-qJn" firstAttribute="centerY" secondItem="4N2-Zw-6Sc" secondAttribute="centerY" id="HTa-7a-n1s"/>
                                                 <constraint firstItem="83G-cp-qH1" firstAttribute="leading" secondItem="Z2e-M4-qJn" secondAttribute="trailing" constant="20" id="IrU-Va-Yyj"/>
-                                                <constraint firstAttribute="bottom" secondItem="Z2e-M4-qJn" secondAttribute="bottom" id="ave-pP-o2k"/>
-                                                <constraint firstItem="83G-cp-qH1" firstAttribute="top" secondItem="4N2-Zw-6Sc" secondAttribute="top" id="cI7-yX-dOg"/>
+                                                <constraint firstItem="83G-cp-qH1" firstAttribute="top" secondItem="4N2-Zw-6Sc" secondAttribute="top" constant="15" id="cI7-yX-dOg"/>
                                                 <constraint firstAttribute="trailing" secondItem="83G-cp-qH1" secondAttribute="trailing" constant="15" id="jvP-tG-Roe"/>
-                                                <constraint firstItem="Z2e-M4-qJn" firstAttribute="top" secondItem="4N2-Zw-6Sc" secondAttribute="top" id="p2Z-J2-wX5"/>
+                                                <constraint firstItem="Z2e-M4-qJn" firstAttribute="top" secondItem="4N2-Zw-6Sc" secondAttribute="top" constant="15" id="p2Z-J2-wX5"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -152,6 +152,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ras-Be-rps" id="fuJ-8E-Gum"/>
+                                    <outlet property="delegate" destination="Ras-Be-rps" id="8sM-LT-MVe"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
