@@ -13,9 +13,9 @@ class NTPCOpenDataConnect: NSObject {
     let serverUrl: URL = URL(string: "http://data.ntpc.gov.tw")!
     let apiRootPaths: [String] = ["od/data/api"]
 
-    private func getData<T: Codable>(apiPath: String,
-                                     queryItems: [URLQueryItem],
-                                     completionHandler: @escaping (T?, Error?) -> Void) {
+    private func getDatas<T: Codable & JsonProtocol>(apiPath: String,
+                                                     queryItems: [URLQueryItem],
+                                                     completionHandler: @escaping ([T]?, Error?) -> Void) {
         var url = self.serverUrl.appendingPathComponent(apiPath)
 
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
