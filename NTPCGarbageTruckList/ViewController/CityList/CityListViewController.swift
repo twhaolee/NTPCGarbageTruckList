@@ -52,6 +52,8 @@ extension CityListViewController: UICollectionViewDataSource, UICollectionViewDe
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(for: indexPath) as CityNameCollectionViewCell
 
+        cell.cityNameLabel?.text = self.citys[indexPath.row].district
+
         return cell
     }
 }
