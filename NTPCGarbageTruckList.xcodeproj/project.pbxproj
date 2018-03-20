@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2706F632061296C00EA6909 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2706F622061296C00EA6909 /* CustomError.swift */; };
 		F2716645205FE6BB00CBC4BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716644205FE6BB00CBC4BA /* AppDelegate.swift */; };
 		F2716647205FE6BB00CBC4BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2716646205FE6BB00CBC4BA /* ViewController.swift */; };
 		F271664A205FE6BB00CBC4BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2716648205FE6BB00CBC4BA /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2706F622061296C00EA6909 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		F2716641205FE6BB00CBC4BA /* NTPCGarbageTruckList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTPCGarbageTruckList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2716644205FE6BB00CBC4BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2716646205FE6BB00CBC4BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		F2716663206008B800CBC4BA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F2706F622061296C00EA6909 /* CustomError.swift */,
 				F2716664206008F400CBC4BA /* NSObject+ClassName.swift */,
 			);
 			path = Extension;
@@ -232,6 +235,7 @@
 				F2716645205FE6BB00CBC4BA /* AppDelegate.swift in Sources */,
 				F2716660205FF1A900CBC4BA /* GarbageTruckListViewController.swift in Sources */,
 				F271665C205FEC5C00CBC4BA /* CityListViewController.swift in Sources */,
+				F2706F632061296C00EA6909 /* CustomError.swift in Sources */,
 				F27166672060094200CBC4BA /* UIViewController+Storyboard.swift in Sources */,
 				F271666E2060128C00CBC4BA /* NTPCOpenDataConnect.swift in Sources */,
 				F2716672206017C700CBC4BA /* JsonProtocol.swift in Sources */,
