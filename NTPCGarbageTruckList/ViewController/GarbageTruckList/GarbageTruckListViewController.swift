@@ -45,7 +45,7 @@ class GarbageTruckListViewController: ViewController {
                 return
             }
 
-            self.stations = datas
+            self.stations += datas
 
             DispatchQueue.main.async {
                 self.tableView?.reloadData()
@@ -84,4 +84,9 @@ extension GarbageTruckListViewController: UITableViewDataSource, UITableViewDele
         return cell
     }
 
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if self.stations.count - 20 < indexPath.row {
+            self.loadGarbageStationInfoList()
+        }
+    }
 }
