@@ -64,6 +64,11 @@ class NTPCOpenDataConnect: NSObject {
                 return
             }
 
+            guard !data.isEmpty else {
+                completionHandler([], nil)
+                return
+            }
+
             guard let httpResponse = response as? HTTPURLResponse else {
                 let error = error ?? CustomError(code: -1, localizedDescription: "The response isn't HTTP response.")
                 completionHandler(nil, error)
